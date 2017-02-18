@@ -21,3 +21,5 @@ var Van = function(loc){
 
 //the good practice
 Van.prototype = Object.create(Car.prototype);
+Van.prototype.constuctor = Van;
+
