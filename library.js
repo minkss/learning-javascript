@@ -13,3 +13,11 @@ var Van = function(loc){
   Car.call(this,loc);
   //return this;
 }
+
+//Van.prototype = Car.prototype;   if so,when u add new method 
+//to Van,Car will add that method too,and vice versa.
+
+//Van.prototype = new Car();      very common,but bad practice.
+
+//the good practice
+Van.prototype = Object.create(Car.prototype);
