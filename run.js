@@ -4,5 +4,7 @@ zed.move();
 var amy = new Van(9);
 console.log(amy.loc);
 
-//amy.move();
-//amy.grab();
+amy.move();
+amy.grab();
+
+console.log(amy.constructor);
